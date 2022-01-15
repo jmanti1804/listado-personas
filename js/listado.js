@@ -19,6 +19,9 @@ function agregarPersona(){
         console.log(persona);
         personas.push(persona);
         mostrarPersonas();
+        nombre.value = '';
+        apellido.value = '';
+        document.getElementById('mensaje').innerHTML = ``;
     }else{
         document.getElementById('mensaje').innerHTML = `Campos vacíos`;
     }
